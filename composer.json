@@ -1,0 +1,44 @@
+{
+    "name": "monkdev/mcms-interactive-note-php",
+    "description": "A PHP Library to transform HTML into an interactive fill the in blank style form",
+    "keywords": [
+        "Sermon",
+        "Message",
+        "Notes",
+        "Church"
+    ],
+    "homepage": "https://github.com/monkdev/mcms-interactive-notes-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Skyler Katz",
+            "email": "skylerkatz@gmail.com",
+            "homepage": "https://about.me/skylerkatz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MonkDev\\InteractiveNote\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MonkDev\\InteractiveNote\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

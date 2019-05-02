@@ -1,0 +1,45 @@
+#notes .pnoteText {
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 2em;
+    border: 0;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: inherit;
+    box-shadow: none;
+    color: __FREE_FORM_TEXT_COLOR__;
+}
+
+#notes .blank {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 700;
+    color: __INPUT_COLOR__;
+}
+
+#notes .blank:focus-within {
+    box-shadow: none;
+}
+
+#notes .blank.correct-answer {
+    border-color: __CORRECT_ANSWER_COLOR__;
+    color: __CORRECT_ANSWER_COLOR__;
+}
+
+#notes .blank.wrong-answer {
+    border-color: __WRONG_ANSWER_COLOR__;
+    color: __WRONG_ANSWER_COLOR__;
+}

@@ -1,0 +1,19 @@
+<div id='interactive-note'>
+    <p>In March 2018, Matthew Iles—the head of <em>the</em> Civil, an ambitious blockchain-for-journalism startup—stood in a tiny New York conference room with a few colleagues seated around him. Wearing a peach-colored sweater, Iles looked up at a {{mounted}} camera to speak to dozens of colleagues spread around the world about how the future of Civil was looking bright.</p>
+    <p>{## What do you think? ##}</p>
+
+    <p>"We're feeling very bullish about the value of our tokens as it relates to the value that has been estimated in all of the agreements that we have {{shared}} with you guys so far," the CEO said in an internal video recording obtained by Ars.</p>
+
+    <p>Civil aims to orchestrate the creation, sale, and management of an Ethereum-based crypto-token, known as CVL, meant to serve as the {{underpinning}} of a slew of recently founded ambitious news sites.</p>
+
+    <p>"Compared to the $0.75 estimation that we made with each of you and if we do our jobs right and execute the way we would like to, it's looking like we could see a two to four X in that value by the time this token sale is complete, and I think that's exciting for everybody," Iles continued.</p>
+    <p>{## What do you think? ##}</p>
+
+    <p>But even that $0.75 valuation put the tokens at more than 789 times what was actually listed in a formal filing. That document was marked as a confidential "Restricted Token Agreement" and has been provided to Ars. It cited the "fair market value" of one CVL at "$0.00095 per Token."</p>
+
+    <p>Now, months later, in a lengthy phone interview, Iles refused to explain this discrepancy to Ars.</p>
+
+    <p>Either way, Civil didn't even get that far. The initial coin offering (ICO) failed, badly. By October 2018, the Civil ICO raised just $1.4 million of a target $8 million. Civil's sole investor, ConsenSys, purchased the {{overwhelming}} majority of that investment: $1.1 of the $1.4 million.</p>
+
+    <p>Individuals who attempted to purchase CVL tokens had to go through a complex and lengthy series of steps that included online quizzes meant to {{demonstrate}} that investors knew what they were getting into. (All the money raised as part of the ICO has been refunded, according to Civil.)</p>
+</div>
