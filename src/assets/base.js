@@ -45,7 +45,11 @@
                 .find(".pnoteText")
                 .each(function() {
                     answer = $(this).val();
-                    $(this).replaceWith("<div><em>" + answer + "</em></div>");
+                    $(this).replaceWith(
+                        "<div style='white-space: pre-wrap;'><em>" +
+                            answer +
+                            "</em></div>"
+                    );
                 });
 
             var title = $("#notes-title").text();
@@ -55,13 +59,15 @@
             mywindow.document.write("<html><head><title>Sermon Notes</title>");
             /* optional stylesheet */
             mywindow.document.write(
-                '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">'
+                '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">'
             );
-            mywindow.document.write('</head><body><div class="content">');
-            mywindow.document.write('<h1>' + title + '</h1>');
-            mywindow.document.write('<h2>' + today_pretty + '</h2><hr>');
+            mywindow.document.write(
+                '</head><body><div class="container mt-3">'
+            );
+            mywindow.document.write("<h1>" + title + "</h1>");
+            mywindow.document.write("<h2>" + today_pretty + "</h2><hr>");
             mywindow.document.write($(notes_text).html());
-            mywindow.document.write('</div></body></html>');
+            mywindow.document.write("</div></body></html>");
             setTimeout(function() {
                 mywindow.print();
                 mywindow.close();
