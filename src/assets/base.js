@@ -56,22 +56,23 @@
             var today_pretty = new Date().toDateString();
 
             var mywindow = window.open("", "new div", "height=800,width=800");
-            mywindow.document.write("<html><head><title>Sermon Notes</title>");
+            var mywindowHTML = "<html><head><title>Sermon Notes</title>";
             /* optional stylesheet */
-            mywindow.document.write(
-                '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">'
-            );
-            mywindow.document.write(
-                '</head><body><div class="container mt-3">'
-            );
-            mywindow.document.write("<h1>" + title + "</h1>");
-            mywindow.document.write("<h2>" + today_pretty + "</h2><hr>");
-            mywindow.document.write($(notes_text).html());
-            mywindow.document.write("</div></body></html>");
+            mywindowHTML += '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">';
+            mywindowHTML += '</head><body><div class="container mt-3">';
+            mywindowHTML += "<h1>" + title + "</h1>";
+            mywindowHTML += "<h2>" + today_pretty + "</h2><hr>";
+            mywindowHTML += $(notes_text).html();
+            mywindowHTML += "</div></body></html>";
+
+            mywindow.document.body.innerHTML = mywindowHTML;
+
             setTimeout(function() {
                 mywindow.print();
-                mywindow.close();
-            }, 50);
+                setTimeout(function() {
+                    mywindow.close();
+                }, 1000);
+            }, 500);
 
             return true;
         }
